@@ -1,0 +1,17 @@
+@media screen and (max-width:768px) {
+    .mobile{
+        position: absolute;
+        top: 0;
+        height: 100vh;
+        width: 0;
+        right: -800px;
+        z-index: 50;
+        background-color: cadetblue;
+        transition: 1s ease-in-out;
+        overflow: hidden;
+    }
+    .show{
+        width: 100%;
+        right: 0;
+        }
+}
