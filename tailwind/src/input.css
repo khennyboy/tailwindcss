@@ -1,6 +1,6 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss/base';
+@import  'tailwindcss/components';
+@import  'tailwindcss/utilities';
 
 .card{
     @apply bg-white rounded overflow-hidden shadow-md relative;
@@ -12,10 +12,4 @@
     @apply rounded-full py-2 px-2 uppercase text-xs font-bold cursor-pointer tracking-wider;
 }
    
-    @media screen and(max-width: 768px) {
-      #mobile{
-        position: absolute;
-        top: 0;
-        height: 100%;
-     }
- }
+ 
