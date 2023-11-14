@@ -5,8 +5,9 @@
   <title>Document</title>
   <link rel="stylesheet" href="./public/output.css">
   <link rel="stylesheet" href="./public/test.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" integrity="sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+  
 </head>
 <body class="text-gray-600 overflow-x-hidden">
 
@@ -107,22 +108,15 @@
       </div>    
     </main>
   </div>
-
-  <div id="open">
-    <div></div>
-    <div></div>
-    <div></div>
-  </div>
 </body>
 
 <script>
 
-  document.addEventListener("DOMContentLoaded", function() {
+  window.addEventListener("load", function() {
     const open = document.querySelector("#open_nav");
     const close = document.querySelector("#close_nav");
     const mobile = document.querySelector(".mobile");
     open.addEventListener("click", function(){
-      alert("hello world");
       mobile.classList.add("show")
     })
     close.addEventListener("click", function(){
@@ -131,6 +125,4 @@
    
   });
 </script>
-
-
 </html>
