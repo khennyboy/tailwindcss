@@ -18,12 +18,12 @@
             <a href="/" class="hover:text-gray-700">Food Ninja</a>
           </h1>
           <div class="block md:hidden">
-          <i class="fas fa-bars text-2xl cursor-pointer " id="open_nav" ></i>
+          <i class="fa fa-bars text-2xl cursor-pointer " id="open_nav" ></i>
           </div>
         </div>
         <ul class="text-sm md:mt-6  mobile" >
           <li class="md:hidden" id="close_nav">
-          <i class="fas fa-times text-3xl mr-5 mt-5 md:mt-0 cursor-pointer"></i>
+          <i class="fa fa-times text-3xl mr-5 mt-5 md:mt-0 cursor-pointer"></i>
         </li>
           <li class="text-gray-700 font-bold mt-6 mr-5 md:mr-0 border-r-4 border-primary px-4">
             <a href="#" >
@@ -122,7 +122,7 @@
     const close = document.querySelector("#close_nav");
     const mobile = document.querySelector(".mobile");
     open.addEventListener("click", function(){
-      // alert("hello world")
+      alert("hello world");
       mobile.classList.add("show")
     })
     close.addEventListener("click", function(){
