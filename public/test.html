@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <link rel="stylesheet" href="./output.css">
+</head>
+<body>
+    <nav  class="flex  p-5 bg-slate-500 items-center justify-between">
+        <a href="./test.html" class="w-2/4 md:w-1/4 ml-2 font-bold logo">
+           <h3>Sheriff_Baba <br />Tech Company</h3> 
+        </a>
+         <ul class="absolute top-0 right-0 w-0 h-full z-50 text-right bg-secondary-200 overflow-hidden mobile md:flex md:w-3/4 md:justify-evenly md:relative md:bg-inherit">
+           <li class="pt-16 md:pt-0 p-2 pr-7 md:p-0 md:pr-0"><a href="#">Home</a></li> 
+            <li class="p-2 pr-7 md:p-0 md:pr-0"><a href="#">About</a></li>
+            <li class="p-2 pr-7 md:p-0 md:pr-0"><a href="#">Add a new Blog</a></li>
+            <li class="p-2 pr-7 md:p-0 md:pr-0"><a href="#">Contact</a></li>
+         </ul>
+         <div id="menu_btn" class="md:hidden cursor-pointer z-50 md:z-0">
+           <div class="icon bar1"></div>
+           <div class="icon bar2"></div>
+           <div class="icon bar3"></div>
+         </div>
+       </nav>
+</body>
+<script>
+   let open = document.querySelector("#menu_btn")
+   let mobile = document.querySelector(".mobile")
+    window.addEventListener("load", function(){
+        open.addEventListener("click", function(){
+            this.classList.toggle("change");
+          if(mobile.classList.contains("show")){
+            mobile.classList.remove("show")
+            mobile.style.transition="width 0.5s"
+          }
+          else{
+            mobile.classList.add("show")
+            mobile.style.transition="width 0.5s"
+          }
+        })
+    })
+    window.addEventListener("resize", function(){
+
+    })
+</script>
+</html>

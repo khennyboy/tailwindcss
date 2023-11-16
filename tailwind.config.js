@@ -10,7 +10,10 @@ module.exports = {
           200: '#888883'
         }
       },
-      height:['responsive']
+      height:['responsive'],
+      transitionDuration: {
+        '250': '250ms'
+      },
     },
   },
   plugins: [],
